@@ -28,14 +28,23 @@ html {
 /* laptop */
 @media (max-width: 1366px) {
   html {
-    font-size: 80%;
+    font-size: clamp(85%, 1vw, 100%);
   }
 }
 
 /* tablet */
 @media (max-width: 768px) {
   html {
-    font-size: 62.5%;
+    font-size: clamp(75%, 1.5vw, 90%);
+  }
+  .hero-content {
+    max-width: 90%;
+  }
+  .hero-content h1 {
+    font-size: clamp(2rem, 4vw, 3rem);
+  }
+  .hero-content p {
+    font-size: clamp(1rem, 2vw, 1.3rem);
   }
   .hamburger {
     display: block;
@@ -48,34 +57,50 @@ html {
   }
 }
 
-/* hanphone */
-@media screen and (max-width: 600px) {
+/* handphone */
+@media (max-width: 600px) {
   html {
-    font-size: 50%;
+    font-size: clamp(65%, 2.5vw, 80%);
   }
-  .hero-content {
-    font-size: 1.5vw;
+  .hero-content,
+  .about-content,
+  .projects-content,
+  .contact-content {
+    max-width: 95%;
   }
-  .about-heading br {
+  .hero-content h1,
+  .about-content h2,
+  .about-content h3,
+  .projects-content h2,
+  .projects-content h3,
+  .contact-content h2,
+  .menubar a {
+    font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  }
+  .hero-content p,
+  .about-content p,
+  .projects-content p,
+  .contact-content p {
+    font-size: clamp(0.9rem, 1.8vw, 1.2rem);
+  }
+  .about-content br {
     display: none;
   }
   .about-main {
     flex-direction: column;
   }
-  .about-skill {
-    width: 100%;
-  }
+  .about-skill,
   .about-info {
     width: 100%;
   }
   .project-main {
     grid-template-columns: 1fr;
-    grid-gap: 0.7rem;
+    grid-gap: 1rem;
   }
   .project-info {
     width: 100%;
   }
   .project-btn {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
   }
 }
