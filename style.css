@@ -1,0 +1,81 @@
+@import url(css/navbar.css);
+@import url(css/mainhero.css);
+@import url(css/socialhero.css);
+@import url(css/about.css);
+@import url(css/project.css);
+@import url(css/contact.css);
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: rgb(246, 245, 242);
+}
+html {
+  scroll-behavior: smooth;
+}
+
+/* Main */
+
+/* Main End */
+
+/* Media Queries */
+/* laptop */
+@media (max-width: 1366px) {
+  html {
+    font-size: 80%;
+  }
+}
+
+/* tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+  .hamburger {
+    display: block;
+  }
+  nav ul {
+    display: none;
+  }
+  .container-social {
+    display: none;
+  }
+}
+
+/* hanphone */
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .hero-content {
+    font-size: 1.5vw;
+  }
+  .about-heading br {
+    display: none;
+  }
+  .about-main {
+    flex-direction: column;
+  }
+  .about-skill {
+    width: 100%;
+  }
+  .about-info {
+    width: 100%;
+  }
+  .project-main {
+    grid-template-columns: 1fr;
+    grid-gap: 0.7rem;
+  }
+  .project-info {
+    width: 100%;
+  }
+  .project-btn {
+    margin-bottom: 2rem;
+  }
+}

@@ -1,0 +1,19 @@
+/* social */
+.container-social {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.hero-social {
+  width: 3.9rem;
+}
+.hero-social-icon-link {
+  width: 100%;
+  display: block;
+  padding: 10px;
+  border-radius: 5px;
+}
+/* social end */
