@@ -60,7 +60,7 @@
   font-size: 1.5em;
   font-weight: 100;
   line-height: 1.1;
-  color: #464545;
+  color: #222831;
   position: relative;
 }
 .project-heading p::after {
@@ -105,7 +105,7 @@
 .project-info p {
   font-size: 1.2rem;
   font-weight: 100;
-  color: #464545;
+  color: #222831;
   text-align: justify;
 }
 .project-btn {
