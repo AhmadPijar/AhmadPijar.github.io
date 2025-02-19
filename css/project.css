@@ -58,7 +58,7 @@
 }
 .project-heading p {
   font-size: 1.5em;
-  font-weight: 100;
+  font-weight: 400;
   line-height: 1.1;
   color: #222831;
   position: relative;
@@ -104,7 +104,7 @@
 }
 .project-info p {
   font-size: 1.2rem;
-  font-weight: 100;
+  font-weight: 400;
   color: #222831;
   text-align: justify;
 }
