@@ -58,7 +58,7 @@
 }
 .hero-content p {
   font-size: clamp(1rem, 2.2vw, 1.5em);
-  font-weight: 300;
+  font-weight: 500;
   line-height: 1.4;
   color: #222831;
   text-shadow: 1px 1px 3px rgba(1, 1, 1, 0.2);
