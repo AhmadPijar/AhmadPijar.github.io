@@ -86,7 +86,7 @@ html {
     font-size: clamp(0.9rem, 1.8vw, 1.2rem);
   }
   .about-content br,
-  .project-content br
+  .project-heading br
   {
     display: none;
   }
