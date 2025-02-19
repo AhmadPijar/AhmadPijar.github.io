@@ -85,7 +85,9 @@ html {
   .contact-content p {
     font-size: clamp(0.9rem, 1.8vw, 1.2rem);
   }
-  .about-content br {
+  .about-content br,
+  .project-content br
+  {
     display: none;
   }
   .about-main {
