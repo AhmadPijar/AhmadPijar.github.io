@@ -31,7 +31,7 @@
   font-size: 1.5em;
   font-weight: 100;
   line-height: 1.1;
-  color: #464545;
+  color: #222831;
   position: relative;
 }
 .about-heading p::after {
@@ -64,7 +64,7 @@
 .about-info p {
   font-size: 1.3rem;
   font-weight: 100;
-  color: #464545;
+  color: #222831;
 }
 .about-btn {
   margin-top: 20px;
@@ -103,7 +103,7 @@
 }
 .skill {
   background-color: #dbdada;
-  color: #464545;
+  color: #222831;
   border-radius: 5px;
   font-size: 1.3rem;
   padding: 3px 8px;
