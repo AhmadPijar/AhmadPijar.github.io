@@ -1,0 +1,15 @@
+footer {
+  color: rgb(255, 255, 255);
+  background: rgb(0, 0, 0);
+}
+.main-footer {
+  color: rgb(238, 238, 238);
+  font-size: clamp(1rem, 1.5vw, 1.5em);
+  text-align: center;
+  padding: 2rem 0px;
+  border-top: 1px solid rgb(68, 68, 68);
+}
+.main-footer a {
+  text-decoration: none;
+  color: rgb(238, 238, 238);
+}

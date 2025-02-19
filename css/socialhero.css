@@ -1,0 +1,32 @@
+/* social */
+.container-social {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 0.1rem;
+}
+.hero-social {
+  width: 4rem;
+}
+.hero-social-icon-link {
+  width: 100%;
+  display: block;
+  padding: 1rem;
+  transition: background 0.3s;
+  border-radius: 5px;
+}
+.hero-social-icon-link a {
+  text-decoration: none;
+  color: inherit;
+}
+.hero-social-icon {
+  width: 100%;
+}
+.hero-social-icon-link img {
+  overflow-clip-margin: content-box;
+  overflow: clip;
+}
+/* social end */
