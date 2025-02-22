@@ -1,87 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 html {
   scroll-behavior: smooth;
 }
-.product1 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 60px;
-  padding-top: 40px;
-  background-color: #f2f5f7;
+:root {
+  --bg-primary: #1a1b2b;
+  --bg-primary2: #50556d;
+  --bg-primary3: #eef1ff;
+  --bg-primary4: #f2f5f7;
 }
-.title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.navbar {
+  background-image: linear-gradient(
+    to right,
+    var(--bg-primary),
+    var(--bg-primary2)
+  );
 }
-.container-product {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+.product {
+  background-color: #1f1e22;
 }
-.rows .cols {
-  background-color: #fff;
-  border-radius: 15px;
-  width: 10rem;
-  margin: 8px;
-  text-align: center;
-  overflow: hidden;
+.heading {
+  background-color: #000;
+  height: 25rem;
 }
-.rows .cols a {
-  text-decoration: none;
-  color: #697565;
+
+.title::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
 }
-.container-search {
-  margin-bottom: 30px;
+.title::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 20%;
+  background: linear-gradient(to bottom, rgba(31, 30, 34, 0), #1f1e22);
+  pointer-events: none;
 }
-.product1 input[type="text"] {
-  padding: 6px;
-  margin-top: 8px;
-  font-size: 17px;
-  border: none;
+.title h2,
+.search {
+  position: relative;
+  color: white;
+  z-index: 1;
+}
+
+.search input {
   border-radius: 13px 0 0 13px;
-  min-width: 0;
+  border: none;
+  width: 25rem;
 }
-.container-search button {
-  padding: 6px 10px;
-  margin-top: 8px;
-  margin-left: -3px;
+
+.search button {
+  margin-left: -5px;
   background: #ddd;
-  font-size: 17px;
   border: none;
   border-radius: 0 13px 13px 0;
   cursor: pointer;
 }
-.container-search button:hover {
+.search button:hover {
   background: #ccc;
 }
-
-footer {
-  background-color: #09122c;
-  color: #f7f7f7;
-  padding: 20px;
-  text-align: start;
+.content {
+  background-color: var(--bg-primary4);
+  border-radius: 15px;
 }
-footer p {
-  margin: -3px 0;
-}
-footer img {
-  width: 17px;
-  height: 17px;
-  object-fit: cover;
-}
-
-footer .contact-info {
-  font-weight: lighter;
-}
-footer a {
-  color: #4caf50;
+.content a {
   text-decoration: none;
+  color: #232125;
+  font-size: 1.5rem;
 }
-footer a:hover {
-  text-decoration: underline;
+.content a:hover {
+  color: #293494;
 }
