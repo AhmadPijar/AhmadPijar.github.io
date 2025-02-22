@@ -83,6 +83,7 @@
 }
 .project-img {
   overflow: hidden;
+  margin: auto;
 }
 .project-img img {
   width: 100%;
