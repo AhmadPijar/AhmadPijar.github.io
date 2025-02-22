@@ -21,6 +21,9 @@ html {
 }
 .product {
   background-color: #1f1e22;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 .heading {
   background-color: #000;
@@ -50,22 +53,27 @@ html {
 .title h2,
 .search {
   position: relative;
-  color: white;
-  z-index: 1;
 }
-
+.search {
+  width: 100%;
+  max-width: 25rem;
+}
 .search input {
   border-radius: 13px 0 0 13px;
-  border: none;
-  width: 25rem;
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 20rem;
+  padding: 8px;
+  outline: none;
 }
-
 .search button {
-  margin-left: -5px;
   background: #ddd;
   border: none;
   border-radius: 0 13px 13px 0;
   cursor: pointer;
+  padding: 9px 12px;
+  margin-bottom: -15px;
+  white-space: nowrap;
 }
 .search button:hover {
   background: #ccc;
